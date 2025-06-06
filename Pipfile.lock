@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d1bb40a7787727f03d5d5af907bdee9b5b959c801a0ad0319b7946a3753eac44"
+            "sha256": "43e4b2abfc6383ec959cf20e7fbec7f56b948f4a9db38f5e861f34ba860b391a"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -352,6 +352,10 @@
             "index": "pypi",
             "markers": "python_version >= '3.9'",
             "version": "==7.2.0"
+        },
+        "kkutilz": {
+            "git": "https://github.com/kazra2025/kkutilz.git",
+            "ref": "a68c498bfc88177a9fbe97003b2242ccdcdd8cbf"
         },
         "mccabe": {
             "hashes": [
