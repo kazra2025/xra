@@ -1,9 +1,8 @@
-import os
 import subprocess as sp
 from pathlib import Path
 
 from xra.central_config import dfcc
-from kkutilz.logz import log_stdio as log
+from xra.log_utilz.logman import LGLVL, default_logger as log
 
 
 # ------------------------------------------------------------------------------------------------------------------------------
@@ -20,7 +19,7 @@ def main():
     print("--------------------")
     print("--------------------")
 
-    log.set_log_level(log.LGLVL.WARN)
+    log.set_log_level(LGLVL.WARN)
     log.dbg("this is dbg")
     log.info("this is info")
     log.warn("This is a warning")
@@ -28,7 +27,7 @@ def main():
 
     print("--------------------")
     print("--------------------")
-    log.set_log_level(log.LGLVL.DBUG)
+    log.set_log_level(LGLVL.DBUG)
     log.dbg("this is dbg")
     log.info("this is info")
     log.warn("This is a warning")
