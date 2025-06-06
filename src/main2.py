@@ -2,6 +2,7 @@ import os
 import io
 import sys
 import json
+import time
 import random
 import hashlib
 import gc
@@ -11,18 +12,17 @@ from pathlib import Path
 import shutil
 
 from xra.central_config import dfcc
-# from xra.log_utilz.log_man import current_logger as log
+from xra.log_utilz.log_man import current_logger as log
 
 
 # ------------------------------------------------------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------------------------------------------------------
 def main():
     print("\n\n")
-    # log.info("main")
-    print(f"repo_root: {dfcc.repo_root}")
+    log.info(f"repo_root: {dfcc.repo_root}")
+    time.sleep(3)
+    log.info(f"repo_root: {dfcc.repo_root}")
     print("\n\n")
-
-
 
 
 # ------------------------------------------------------------------------------------------------------------------------------
