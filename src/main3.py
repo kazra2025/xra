@@ -1,25 +1,38 @@
 import os
-import io
-import sys
-import json
-import time
 import subprocess as sp
 from pathlib import Path
 
 from xra.central_config import dfcc
-from xra.log_utilz.log_man import current_logger as log
+from kkutilz.logz import log_stdio as log
 
 
 # ------------------------------------------------------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------------------------------------------------------
 def main():
-    print("\n\n")
-    files = [f for f in Path(dfcc.repo_root).rglob('*.py[ocd]')]
-    for f in files:
-        print(f)
+    log.info("Hi")
 
-    # ---
-    print("\n\n")
+    # i = 0
+    # for _ in range(3):
+    #     i *= 4242
+
+    log.info("Hi again")
+
+    print("--------------------")
+    print("--------------------")
+
+    log.set_log_level(log.LGLVL.WARN)
+    log.dbg("this is dbg")
+    log.info("this is info")
+    log.warn("This is a warning")
+    log.err("This is an error")
+
+    print("--------------------")
+    print("--------------------")
+    log.set_log_level(log.LGLVL.DBUG)
+    log.dbg("this is dbg")
+    log.info("this is info")
+    log.warn("This is a warning")
+    log.err("This is an error")
 
 
 # ------------------------------------------------------------------------------------------------------------------------------
