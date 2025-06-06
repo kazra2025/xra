@@ -4,14 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-cryptography = "*"
-pynacl = "*"
 fastapi = "*"
 uvicorn = "*"
+requests = "*"
 
 [dev-packages]
-pylint = "*"
 yapf = "*"
+flake8 = "*"
 
 [requires]
 python_version = "3.12"
