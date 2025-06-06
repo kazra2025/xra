@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+requests = "*"
+
+[dev-packages]
+yapf = "*"
+flake8 = "*"
+kkutilz = {git = "https://github.com/kazra2025/kkutilz.git"}
+
+[requires]
+python_version = "3.12"
